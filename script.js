@@ -1,9 +1,9 @@
-let modalBtn = document.querySelector('.modal-btn')
-let modalBg = document.querySelector('.modal-bg')
-let modalClose = document.querySelector('.modal-close')
-modalBtn.addEventListener('click', () => {
-    modalBg.classList.add('bg-active')
+const modal = document.querySelector('.background')
+const btn = document.querySelector('#modal-btn')
+const closeBtn = document.querySelector('#modal-close')
+btn.addEventListener('click', () => {
+    modal.classList.add('active')
 })
-modalClose.addEventListener('click', () => {
-    modalBg.classList.remove('bg-active')
+closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active')
 })
